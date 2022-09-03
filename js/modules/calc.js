@@ -1,4 +1,4 @@
-function calculateCallories() {
+function calc() {
     const result = document.querySelector('.calculating__result span');
 
     let sex, height, weight, age, ratio;
@@ -36,7 +36,6 @@ function calculateCallories() {
 
         elements.forEach(elem => {
             elem.classList.remove(activeClass);
-
             if (elem.getAttribute('id') === localStorage.getItem('sex')) {
                 elem.classList.add(activeClass);
             }
@@ -107,4 +106,4 @@ function calculateCallories() {
 
 }
 
-module.exports = calculateCallories;
+export default calc;
